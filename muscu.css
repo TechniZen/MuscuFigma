@@ -1,4 +1,4 @@
-/* styles.css - Design mobile fidèle à la maquette */
+/* musculation.css - Styles spécifiques à la page musculation.html */
 
 body {
   margin: 0;
@@ -22,9 +22,16 @@ body.dark {
   position: relative;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
 
-/* Liste jours */
 .days-list {
   display: flex;
   flex-direction: column;
@@ -57,37 +64,34 @@ body.dark {
   font-size: 1.5rem;
 }
 
-
-
-
 .bottom-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background: #eee;
   padding: 0.75rem 0;
   border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav-btn {
   background: none;
   border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
+  font-size: 1.5rem;
   opacity: 0.5;
+  transition: opacity 0.2s;
 }
 
-.nav-btn.active {
+.nav-btn.active,
+.nav-btn:hover {
   opacity: 1;
 }
 
 
-
-
-/* Mode sombre */
-body.dark .card,
-body.dark .exercise-card {
-  background-color: #1f1f1f;
-  color: #fff;
+body.dark .day-button {
+  color: white;
 }
 
 body.dark .bottom-nav {
@@ -95,9 +99,5 @@ body.dark .bottom-nav {
 }
 
 body.dark .nav-btn {
-  color: white;
-}
-
-body.dark .day-button {
   color: white;
 }

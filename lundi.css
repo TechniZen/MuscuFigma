@@ -1,112 +1,159 @@
-/* Détail exercices */
+/* lundi.css - Fidèle à la maquette */
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Arial Rounded MT Bold', sans-serif;
-  background-color: #fdfdfd;
+  background-color: #fff;
   color: #111;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  transition: background 0.3s, color 0.3s;
+  box-sizing: border-box;
 }
 
-body.dark {
-  background-color: #121212;
-  color: #fff;
-}
-
-.header {
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
-  text-align: center;
-  position: relative;
-}
-
-.day-header {
-  padding: 1rem;
-  text-align: center;
-  color: white;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.day-header.lundi {
-  background: #ce7054;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+.icon {
+  font-size: 1.6rem;
 }
 
-.exercise-card {
-  background: #ececec;
+.header-subtitle {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: -0.4rem;
+}
+
+.day-card {
+  background-color: #ce7054;
+  color: white;
+  border-radius: 1rem;
   margin: 1rem;
   padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.5);
+  margin-top: 0px;
 }
 
-.exercise-card h3 {
+.day-card h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.7rem;
   margin: 0;
+  margin-top: -20px;
 }
 
-.ex-name {
+.day-card .arrow {
+  transform: rotate(90deg);
+  font-size: 3rem;
+  color: black;
+  margin-top: 5px;
+}
+
+.label-title {
   font-weight: bold;
+  font-size: 1rem;
+  color: #222;
+  padding-bottom: 10px;
 }
 
-.ex-desc {
-  font-size: 0.9rem;
-  margin: 0.5rem 0;
+.label-title .label-content {
+  font-weight: normal;
+  font-size: 0.92rem;
+  color: #555;
+  margin-left: 0.3rem;
+}
+
+.day-card .desc {
+  font-size: 0.8rem;
+  margin-top: -15px;
+  color: #ffeae4;
+  font-weight: normal;
+}
+
+.exercise-subcard {
+  background: #fff;
+  color: #000;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+}
+
+.exercise-labels {
+  flex: 1;
+  min-width: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
   color: #333;
 }
 
-.ex-info {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0;
+.exercise-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-end; /* aligne les inputs à droite */
+  min-width: 40%;
 }
 
-.ex-info li {
-  font-size: 0.9rem;
-  margin-bottom: 0.25rem;
+.exercise-inputs label {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  color: #000;
+  font-weight: 600;
+  width: 100%;
 }
 
+.exercise-inputs input {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  background: #4B4B4B;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.75rem;
+  display: inline-block;
+}
 
 .bottom-nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   background: #eee;
   padding: 0.75rem 0;
   border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav-btn {
   background: none;
   border: none;
-  font-size: 1.4rem;
-  cursor: pointer;
+  font-size: 1.5rem;
   opacity: 0.5;
+  transition: opacity 0.2s;
 }
 
-.nav-btn.active {
+.nav-btn.active,
+.nav-btn:hover {
   opacity: 1;
-}
-
-
-
-
-/* Mode sombre */
-body.dark .card,
-body.dark .exercise-card {
-  background-color: #1f1f1f;
-  color: #fff;
-}
-
-body.dark .bottom-nav {
-  background-color: #222;
-}
-
-body.dark .nav-btn {
-  color: white;
-}
-
-body.dark .day-button {
-  color: white;
 }

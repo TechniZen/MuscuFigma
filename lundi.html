@@ -1,64 +1,69 @@
-<!-- lundi.html - Détail de la séance Lundi -->
+<!-- lundi.html - Page fidèle à la maquette mobile -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lundi</title>
+  <title>Musculation - Lundi</title>
   <link rel="stylesheet" href="lundi.css">
-  <script defer src="script.js"></script>
 </head>
-<body class="light">
-  <header class="header">
-    <h1 class="title">Musculation</h1>
-    <p class="subtitle">programme</p>
+<body>
+  <header class="header-top">
+    <span class="icon">📅</span>
+    <span>Musculation</span>
+    <div class="header-subtitle">Programme</div>
   </header>
+  
 
-  <main class="workout-detail">
-    <section class="day-header lundi">
-      <h2>LUNDI</h2>
-      <p>Haut du corps - push</p>
-    </section>
+  <section class="day-card">
+    <h2>
+      Lundi
+      <span class="arrow">➔</span>
+    </h2>
+    <div class="desc">Haut du corps - push</div>
 
-    <div class="exercise-card">
-      <h3>Exercice 1</h3>
-      <p class="ex-name">Chest press (machine)</p>
-      <p class="ex-desc">Ceci illustre la description de l'exercice mais comme j'ai la flemme de le faire, j'écris ça, bisous !</p>
-      <ul class="ex-info">
-        <li><strong>Durée :</strong> /</li>
-        <li><strong>Poids :</strong> 15</li>
-        <li><strong>Séries :</strong> 3</li>
-        <li><strong>Répétitions :</strong> 10</li>
-        <li><strong>Repos :</strong> entre 60 et 90 secondes</li>
-      </ul>
+    <div class="exercise-subcard">
+      <div class="exercise-labels">
+        <div class="label-title">Exercice<br><span class="label-content">Développé couché</span></div>
+        <div class="label-title">Description<br><span class="label-content">Pectoraux - haltères</span></div>
+        <div class="label-title">Repos<br><span class="label-content">60s</span></div>
+      </div>
+      <div class="exercise-inputs">
+        <label>Durée <input type="text" value="45"></label>
+        <label>Poids <input type="text" value="20"></label>
+        <label>Séries <input type="text" value="4"></label>
+        <label>Répétitions : <input type="text" value="10"></label>
+      </div>
     </div>
 
-    <div class="exercise-card">
-      <h3>Exercice 2</h3>
-      <p class="ex-name">Développé épaules guidé</p>
-      <p class="ex-desc">Ceci illustre la description de l'exercice mais comme j'ai la flemme de le faire, j'écris ça, bisous !</p>
-      <ul class="ex-info">
-        <li><strong>Durée :</strong> /</li>
-        <li><strong>Poids :</strong> 10</li>
-        <li><strong>Séries :</strong> 3</li>
-        <li><strong>Répétitions :</strong> 10</li>
-        <li><strong>Repos :</strong> entre 60 et 90 secondes</li>
-      </ul>
+    <div class="exercise-subcard">
+      <div class="exercise-labels">
+        <div class="label-title">Exercice<br><span class="label-content">Développé couché</span></div>
+        <div class="label-title">Description<br><span class="label-content">Pectoraux - haltères</span></div>
+        <div class="label-title">Repos<br><span class="label-content">60s</span></div>
+      </div>
+      <div class="exercise-inputs">
+        <label>Durée <input type="text" value="60"></label>
+        <label>Poids <input type="text" value="--"></label>
+        <label>Séries <input type="text" value="3"></label>
+        <label>Répétitions <input type="text" value="15"></label>
+      </div>
     </div>
 
-    <div class="exercise-card">
-      <h3>Exercice 3</h3>
-      <p class="ex-name">Triceps pulley</p>
-      <p class="ex-desc">Ceci illustre la description de l'exercice mais comme j'ai la flemme de le faire, j'écris ça, bisous !</p>
-      <ul class="ex-info">
-        <li><strong>Durée :</strong> /</li>
-        <li><strong>Poids :</strong> 10</li>
-        <li><strong>Séries :</strong> 3</li>
-        <li><strong>Répétitions :</strong> 10</li>
-        <li><strong>Repos :</strong> entre 60 et 90 secondes</li>
-      </ul>
+    <div class="exercise-subcard">
+      <div class="exercise-labels">
+        <div class="label-title">Exercice<br><span class="label-content">Développé couché</span></div>
+        <div class="label-title">Description<br><span class="label-content">Pectoraux - haltères</span></div>
+        <div class="label-title">Repos<br><span class="label-content">60s</span></div>
+      </div>
+      <div class="exercise-inputs">
+        <label>Durée <input type="text" value="30"></label>
+        <label>Poids <input type="text" value="10"></label>
+        <label>Séries <input type="text" value="4"></label>
+        <label>Répétitions <input type="text" value="12"></label>
+      </div>
     </div>
-  </main>
+  </section>
 
   <nav class="bottom-nav">
     <button class="nav-btn" onclick="location.href='index.html'">🏠</button>
