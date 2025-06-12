@@ -16,20 +16,23 @@ body.dark {
   color: #fff;
 }
 
-.header {
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   padding: 1rem;
-  text-align: center;
-  position: relative;
-}
-
-.title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.subtitle {
+.icon {
+  font-size: 1.6rem;
+}
+
+.header-subtitle {
   font-size: 1rem;
-  color: #666;
+  color: #888;
+  margin-bottom: -0.4rem;
 }
 
 .days-list {
@@ -44,11 +47,11 @@ body.dark {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  font-size: 1.2rem;
-  padding: 1rem;
+  font-size: 1.5rem;
+  padding: 0.7rem;
   border-radius: 12px;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -61,8 +64,10 @@ body.dark {
 .dimanche { background: #efc2f4; }
 
 .arrow {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: black;
 }
+
 
 .bottom-nav {
   display: flex;

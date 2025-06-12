@@ -121,7 +121,7 @@ body {
 }
 
 .exercise-inputs input {
-  width: 30px;
+  width: 29px;
   height: 30px;
   border: none;
   border-radius: 50%;
@@ -131,6 +131,10 @@ body {
   font-weight: bold;
   font-size: 0.75rem;
   display: inline-block;
+
+    /* Ajoute une ombre intérieure subtile */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.7),
+              inset 0 -1px 2px rgba(255, 255, 255, 0.3);
 }
 
 .bottom-nav {
