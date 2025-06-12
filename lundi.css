@@ -1,0 +1,112 @@
+/* Détail exercices */
+
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-color: #fdfdfd;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.day-header {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.day-header.lundi {
+  background: #ce7054;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.exercise-card {
+  background: #ececec;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.exercise-card h3 {
+  margin: 0;
+}
+
+.ex-name {
+  font-weight: bold;
+}
+
+.ex-desc {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.ex-info {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.ex-info li {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #eee;
+  padding: 0.75rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nav-btn.active {
+  opacity: 1;
+}
+
+
+
+
+/* Mode sombre */
+body.dark .card,
+body.dark .exercise-card {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+body.dark .bottom-nav {
+  background-color: #222;
+}
+
+body.dark .nav-btn {
+  color: white;
+}
+
+body.dark .day-button {
+  color: white;
+}

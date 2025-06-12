@@ -1,0 +1,103 @@
+/* styles.css - Design mobile fidèle à la maquette */
+
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-color: #fdfdfd;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+
+
+/* Liste jours */
+.days-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.day-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.lundi { background: #e5977b; }
+.mardi { background: #f1bc58; }
+.mercredi { background: #f5e276; }
+.jeudi { background: #a2e57b; }
+.vendredi { background: #a1b8f8; }
+.samedi { background: #c2aff0; }
+.dimanche { background: #efc2f4; }
+
+.arrow {
+  font-size: 1.5rem;
+}
+
+
+
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #eee;
+  padding: 0.75rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nav-btn.active {
+  opacity: 1;
+}
+
+
+
+
+/* Mode sombre */
+body.dark .card,
+body.dark .exercise-card {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+body.dark .bottom-nav {
+  background-color: #222;
+}
+
+body.dark .nav-btn {
+  color: white;
+}
+
+body.dark .day-button {
+  color: white;
+}

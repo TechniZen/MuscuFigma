@@ -1,0 +1,48 @@
+<!-- index.html - Page Today -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Today</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="light">
+  <header class="header">
+    <h1 class="title">Today</h1>
+    <p class="date">11 June</p>
+    <label class="switch">
+      <input type="checkbox" id="modeToggle">
+      <span class="slider"></span>
+    </label>
+  </header>
+
+  <main class="main">
+    <section class="card muscu-card" onclick="location.href='musculation.html'">
+      <div class="image muscu-image"></div>
+      <div class="card-content">
+        <p class="day-label">séance du <strong>LUNDI</strong></p>
+        <p class="type-label">haut du corps - push</p>
+        <h2 class="section-title">Musculation</h2>
+        <p class="section-subtitle">programme</p>
+      </div>
+    </section>
+
+    <section class="card nutrition-card">
+      <div class="image nutrition-image"></div>
+      <div class="card-content">
+        <h2 class="section-title">Nutrition</h2>
+        <p class="section-subtitle">Les meilleurs aliments pour une meilleure efficacité</p>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active">🏠</button>
+    <button class="nav-btn" onclick="location.href='musculation.html'">📅</button>
+    <button class="nav-btn">🍴</button>
+    <button class="nav-btn">⚙️</button>
+  </nav>
+</body>
+</html>

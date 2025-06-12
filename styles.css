@@ -1,0 +1,155 @@
+/* styles.css - Design mobile fidèle à la maquette */
+
+body {
+  margin: 0;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  background-color: #fdfdfd;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+.header {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.subtitle, .date {
+  font-size: 1rem;
+  color: #666;
+}
+
+.switch {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.slider {
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: white;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input[type="checkbox"]:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.muscu-card { background: #fce7f3; }
+.nutrition-card { background: #e0d4fd; }
+
+.card-content {
+  padding: 1rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+}
+
+.section-subtitle, .type-label, .day-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.muscu-image {
+  background-color: #ffb703; /* Placeholder */
+}
+
+.nutrition-image {
+  background-color: #8ecae6; /* Placeholder */
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background: #eee;
+  padding: 0.75rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.nav-btn.active {
+  opacity: 1;
+}
+
+
+
+/* Mode sombre */
+body.dark .card,
+body.dark .exercise-card {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+body.dark .bottom-nav {
+  background-color: #222;
+}
+
+body.dark .nav-btn {
+  color: white;
+}
+
+body.dark .day-button {
+  color: white;
+}
