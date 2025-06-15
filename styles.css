@@ -43,11 +43,7 @@ body.dark {
   color: #666;
 }
 
-.switch {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
+
 
 .slider {
   width: 40px;
