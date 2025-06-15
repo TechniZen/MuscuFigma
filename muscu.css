@@ -100,9 +100,10 @@ body.dark .day-button {
 }
 
 body.dark .bottom-nav {
-  background-color: #222;
+  background-color: #444;
 }
 
 body.dark .nav-btn {
   color: white;
+  background-color: #444;
 }

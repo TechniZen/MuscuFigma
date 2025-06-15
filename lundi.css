@@ -161,3 +161,14 @@ body {
 .nav-btn:hover {
   opacity: 1;
 }
+
+
+
+body.dark .bottom-nav {
+  background-color: #444;
+}
+
+body.dark .nav-btn {
+  color: white;
+  background-color: #444;
+}

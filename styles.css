@@ -93,10 +93,14 @@ input[type="checkbox"] {
   transform: scale(1.01);
 }
 
-.muscu-card { background: #fce7f3; }
+.muscu-card { 
+  background: #fce7f3; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
 .nutrition-card { 
   height: 150px;
   background: #e0d4fd; 
+  box-shadow: 0 2px 5px rgba(86, 58, 135, 0.825);
 }
 
 .card-content {
@@ -170,7 +174,7 @@ img{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #ccc;
+  background: #dddddd;
   padding: 0.75rem 0;
   border-top: 1px solid #ccc;
   position: fixed;
@@ -179,7 +183,7 @@ img{
 }
 
 .nav-btn {
-  background: none;
+  background: #dddddd;
   border: none;
   font-size: 1.5rem;
   opacity: 0.5;
@@ -205,6 +209,7 @@ body.dark .bottom-nav {
 
 body.dark .nav-btn {
   color: white;
+  background-color: #444;
 }
 
 body.dark .day-button {
