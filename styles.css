@@ -81,10 +81,11 @@ input[type="checkbox"] {
 }
 
 .card {
+  margin-top: -25px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   overflow: hidden;
   transition: transform 0.2s;
 }

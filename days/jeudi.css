@@ -71,10 +71,13 @@ body {
   margin-left: 0.3rem;
 }
 
+.desc{
+  color: #000;
+}
+
 .day-card .desc {
   font-size: 0.8rem;
   margin-top: -15px;
-  color: #ffeae4;
   font-weight: normal;
 }
 
