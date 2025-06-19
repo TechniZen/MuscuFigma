@@ -1,9 +1,5 @@
 /* styles.css - Design mobile fidèle à la maquette */
 
-html.dark {
-  background-color: #333;
-}
-
 body {
   margin: 0;
   font-family: 'Arial Rounded MT Bold', sans-serif;
